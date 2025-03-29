@@ -10,6 +10,11 @@ This documentation reflects **my personal experience, learnings, and technical d
 ## **1. My Transformer Architecture**  
 Before diving into training, I had to **understand how transformer-based LLMs work** at a fundamental level.  
 
+![1_Ez3XmeCXcEgFYtm-DgzmZg](https://github.com/user-attachments/assets/ba08953c-da79-42c1-a7f2-e1fcb138531e)
+
+![Vision-Transformer-Model-Architecture-1024x746](https://github.com/user-attachments/assets/29b63517-1815-47b7-ad45-8dc146302fcf)
+
+
 ### **The Model**  
 - I built my model **based on the Transformer architecture** with **multi-head self-attention**.  
 - The **core** of my model consisted of **12 Transformer blocks**, just like in the GPT-2 architecture.  
