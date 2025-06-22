@@ -39,12 +39,13 @@ Instead of relying on a **single attention mechanism**, MHA **splits the input i
      - **Key (K):** How relevant other words are to this word.  
      - **Value (V):** The actual information passed forward.  
    
-2. **Scaled Dot-Product Attention**  
-   - Attention scores are computed using:  
-     \[
-     \text{Attention}(Q, K, V) = \text{softmax} \left( \frac{QK^T}{\sqrt{d_k}} \right) V
-     \]
-   - This determines **which words influence each other** in the sequence.  
+2. **Scaled Dot-Product Attention**
+
+The attention mechanism is calculated as:
+
+Attention(Q, K, V) = softmax((Q × Kᵀ) / √dₖ) × V
+
+This determines **which words influence each other** in the sequence.
 
 3. **Multiple Attention Heads Compute in Parallel**  
    - Instead of a single set of (Q, K, V), I used **multiple heads** (e.g., 12 heads in my model).  
